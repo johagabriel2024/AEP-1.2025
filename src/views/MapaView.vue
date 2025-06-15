@@ -21,10 +21,8 @@ import { ref, onMounted } from "vue";
 import L from "leaflet";
 import caminhaoImg from "@/assets/caminhao.png";
 
-// Centro geral da cidade
 const mapCenter = ref([-23.4209, -51.9331]);
 
-// Ícone do caminhão
 const iconeCaminhao = L.icon({
   iconUrl: caminhaoImg,
   iconSize: [40, 40],
@@ -144,7 +142,6 @@ const caminhoes = ref([
   },
 ]);
 
-// Movimento
 onMounted(() => {
   setInterval(() => {
     caminhoes.value = caminhoes.value.map((caminhao) => {
