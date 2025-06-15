@@ -48,9 +48,7 @@
   </div>
 </template>
 
-<script setup>
-// Nenhuma lógica dinâmica ainda
-</script>
+
 
 <style scoped>
 .card {
